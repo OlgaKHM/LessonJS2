@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Задача 6</title>
+</head>
+
+<body>
+	<h2>Задача 6.</h2>
+	<p>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо
+		та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+	<script>
+
+		//ввести данні
+		let x1 = parseFloat(prompt("Введіть вартість першого товару", "0,00"))
+		let y1 = parseInt(prompt("Введіть кількість першого товару", "0"))
+		let x2 = parseFloat(prompt("Введіть вартість другого товару", "0,00"))
+		let y2 = parseInt(prompt("Введіть кількість другого товару", "0"))
+		let x3 = parseFloat(prompt("Введіть вартість третього товару", "0,00"))
+		let y3 = parseInt(prompt("Введіть кількість третього товару", "0"))
+
+		//знаходимо результат
+		let s1 = x1 * y1
+		let s2 = x2 * y2
+		let s3 = x3 * y3
+		let sum = s1 + s2 + s3
+
+		//виводимо результат
+		document.write(`
+				<table>
+					<tr>
+						<th>товар</th>
+						<th>вартість<br>грн.</th>
+						<th>кількість<br>шт.</th>
+						<th>сума<br>грн.</th>
+					</tr>	
+					<tr>
+						<th>перший товар</th>
+						<th>${x1}</th>
+						<th>${y1}</th>
+						<th>${s1}</th>
+					</tr>		
+					<tr>
+						<th>другий товар</th>
+						<th>${x2}</th>
+						<th>${y2}</th>
+						<th>${s2}</th>
+					</tr>	
+					<tr>
+						<th>третій товар</th>
+						<th>${x3}</th>
+						<th>${y3}</th>
+						<th>${s3}</th>
+					</tr>	
+					<tr>
+						<th></th>
+						<th>загальна вартість</th>
+						<th></th>
+						<th>${sum}</th>
+					</tr>		
+				</table>	
+			`)
+	</script>
+</body>
+
+</html>

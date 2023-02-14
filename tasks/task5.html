@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=S, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Задача 5</title>
+</head>
+
+<body>
+	<h2>Задача 5.</h2>
+	<p>Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.</p>
+	<script>
+		//ввести данні
+		let x = parseInt(prompt("Введіть кількість секунд, що пройшла від початку доби", "0"))
+
+		//знаходимо результат
+		let s1 = x / 3600
+		let s2 = (x - s1.toFixed(0) * 3600) / 60
+
+		//виводимо результат
+		document.write(`
+				${x} секунд складає ${s1.toFixed(0)} годин ${s2.toFixed(0)} хвилин.`)
+	</script>
+</body>
+
+</html>

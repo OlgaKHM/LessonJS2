@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Задача 4</title>
+</head>
+
+<body>
+	<h2>Задача 4.</h2>
+	<p>Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</p>
+	<script>
+		//ввести данні
+		let x = parseInt(prompt("Введіть довжину у сантиметрах", "0"))
+
+		//знаходимо результат
+		let s1 = x / 100
+		let s2 = s1 / 1000
+
+		//виводимо результат
+		document.write(`
+				Це складає ${s1} метрів<br>
+				або ${s2} кілометрів.`)
+	</script>
+</body>
+
+</html>

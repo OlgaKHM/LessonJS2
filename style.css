@@ -1,0 +1,40 @@
+body {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 30px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(234, 232, 238);
+}
+
+h1 {
+	text-align: center;
+	color: #d4094d;
+	font-size: 40px;
+	font-weight: 800;
+}
+
+h2 {
+	color: #d4094d;
+	font-weight: 800;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 800;
+
+}
+
+th {
+	padding: 5px 35px;
+	outline: 1px solid rgb(13, 2, 44);
+}
+
+table {
+	outline: 2px solid rgb(13, 2, 44);
+}
